@@ -18,7 +18,7 @@ const Appointment = () => {
 
                             <div className="location-name">
                                 <AiFillHome />
-                                <p>35 West Dental Street California 1004</p>
+                                <p>No 1B, Anandha Nagar, Kathirkamam, pondicherry - 9</p>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ const Appointment = () => {
                         <div className="appointment-form-area">
                             <SectionTitle 
                             subTitle="BOOK APPOINTMENT"
-                            title="Care at Dentalist is pleasure"
+                            title="Care at Trident is pleasure"
                             description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual"/>
 
                             <ContactForm />

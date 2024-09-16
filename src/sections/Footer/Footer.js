@@ -40,7 +40,7 @@ const Footer = () => {
         },
         {
             'title': 'Open Hour',
-            'info': '09:00 AM - 06:00 PM',
+            'info': '09:00 AM - 09:00 PM',
             'icon': time
         },
         {

@@ -11,6 +11,10 @@ import shapeThree from '../../assets/banner/vector_03.png';
 import shapeFour from '../../assets/banner/pattern.png';
 
 const Banner = () => {
+    const phoneNumber = '+919944465304'; // Replace with your actual phone number
+    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
+    const encodedMessage = encodeURIComponent(bookingMessage);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     return (
         <section className='section-bg section-common banner-section'>
@@ -25,7 +29,7 @@ const Banner = () => {
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                            <Link to="/contact">Book an appointment</Link>
+                                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"> Book an Appointment</a>
                                         </div>
 
                                         <div className="banner-call">
@@ -34,7 +38,7 @@ const Banner = () => {
                                             </div>
                                             <div className='call-text'>
                                                 <p>Dental 24H Emergency</p>
-                                                <h6>03 482 394 123</h6>
+                                                <h6>+91 99444 65304</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -51,7 +55,7 @@ const Banner = () => {
                                             <img src={doctorImg} alt="doctor" />
                                         </div>
                                         <div className='info-text'>
-                                            <p>Dr. Samantha Alice</p>
+                                            <p>Dr. J. Rajarajeswari</p>
                                             <p><small>Consultant</small></p>
                                         </div>
                                     </div>  

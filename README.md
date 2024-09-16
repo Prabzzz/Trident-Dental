@@ -6,6 +6,7 @@ with ReactJS, Bootstrap, and Sass. Dental clinic can use
 this template to bring their business online or increase business visibility.
 
 ## Live View
+[Trident] http://tridentmdc.com 
 
 ## Tech Stack
 React, Bootstrap, SASS, React Router, React Slick, React Icons and AOS
