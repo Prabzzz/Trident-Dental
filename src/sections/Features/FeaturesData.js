@@ -11,8 +11,8 @@ const featuresData = [
     },
     {
         'icon': iconTwo,
-        'title': 'Insurance accepted',
-        'description': 'We’re in network with major insurers like Delta Dental, Aetna, and Cigna.'
+        'title': 'All payments accepted',
+        'description': 'We accept visa, credit, debit, rupay, international payments, UPI, cash.'
     },
     {
         'icon': iconThree,

@@ -24,12 +24,12 @@ const Banner = () => {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="banner-text" data-aos="fade-up" data-aos-duration="2000">
-                                    <h1>Entrust your smile to professionals</h1>
-                                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                    <h1>Get ready to smile like you mean it</h1>
+                                    <p>Experience exceptional dental care tailored to give you a flawless, confident smile. Trust our cutting-edge treatments to keep you smiling boldly every day!</p>
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"> Book an Appointment</a>
+                                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book an Appointment</a>
                                         </div>
 
                                         <div className="banner-call">
@@ -56,7 +56,7 @@ const Banner = () => {
                                         </div>
                                         <div className='info-text'>
                                             <p>Dr. J. Rajarajeswari</p>
-                                            <p><small>Consultant</small></p>
+                                            <p><small>Chief Dental Surgeon</small></p>
                                         </div>
                                     </div>  
 

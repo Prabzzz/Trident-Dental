@@ -14,8 +14,8 @@ const Gallery = () => {
             <div className="container">
                 <SectionTitle 
                     subTitle="Gallery"
-                    title="Some proof about our services for you"
-                    description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                    title="Delve Into Our World"
+                    description="Explore the heart of our mission and the passion that fuels us. Get to know the team and the values that drive our innovations."
                 />
                 <div className="row">
                     <div className="col-md-5 col-sm-6">

@@ -2,7 +2,6 @@ import React from 'react';
 import './Emergency.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import EmergencyImg from '../../assets/emergency.png';
-import { Link } from 'react-router-dom';
 
 const Emergency = () => {
     const phoneNumber = '+919944465304'; // Replace with your actual phone number
