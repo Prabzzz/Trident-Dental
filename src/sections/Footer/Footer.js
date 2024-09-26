@@ -40,12 +40,12 @@ const Footer = () => {
         },
         {
             'title': 'Open Hour',
-            'info': '09:00 AM - 09:00 PM',
+            'info': 'Mon - Fri [10:00 AM - 09:00 PM]<br />Sat - Sun [11:00 AM - 10:00 PM]',
             'icon': time
         },
         {
             'title': 'Clinic Address',
-            'info': 'No 1B, Anandha Nagar, Kathirkamam, pondicherry - 605009',
+            'info': 'No 1B, Anandha Nagar,<br />Kathirkamam, pondicherry - 605009',
             'icon': location
         }
     ]
@@ -91,8 +91,7 @@ const Footer = () => {
                                                 </div>
                                                 <div className="contact-text">
                                                     <p>{footerContact.title}</p>
-                                                    <h5>{footerContact.info}</h5>
-                                                </div>
+                                                    <h5 dangerouslySetInnerHTML={{ __html: footerContact.info }}></h5>                                                </div>
                                             </div>
                                 })
                             }
