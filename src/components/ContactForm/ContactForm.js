@@ -37,11 +37,15 @@ const ContactForm = () => {
                 <div className="col-lg-6">
                     <div className="appointment-call">
                         <div className='icon'>
-                            <img src={icon} alt="icon" />
+                            <a href="tel:+919944465304">
+                                <img src={icon} alt="icon" />
+                            </a>
                         </div>
                         <div className='call-text'>
                             <p>Dental 24H Emergency</p>
-                            <h6>+91 99444 65304</h6>
+                            <a href="tel:+919944465304" className='call-link'>
+                                <h6>+91 99444 65304</h6>
+                            </a>
                         </div>
                     </div>
                 </div>

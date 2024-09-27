@@ -59,4 +59,15 @@
         text-transform: uppercase;
         font-weight: 700;
     }
+
+    .call-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit; 
+    }
+    
+    .call-link:hover {
+        color: $color-blue; 
+    }
 }

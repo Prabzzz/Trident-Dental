@@ -35,7 +35,7 @@ const Footer = () => {
     const footerContacts = [
         {
             'title': 'Phone Number',
-            'info': `<a href="tel:+919944465304">+91 99444 65304</a>`,
+            'info': `<a href="tel:+919944465304" target="_blank">+91 99444 65304</a>`,
             'icon': call,
             'link': 'tel:+919944465304'
         },
