@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/footer_logo.png';
 import './Footer.scss';
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
@@ -37,7 +37,7 @@ const Footer = () => {
             'title': 'Phone Number',
             'info': `<a href="tel:+919944465304">+91 99444 65304</a>`,
             'icon': call,
-            'link': 'tel:+919944465304'  
+            'link': 'tel:+919944465304'
         },
         {
             'title': 'Open Hour',
@@ -66,9 +66,9 @@ const Footer = () => {
                         <div className="social-logo">
                             <p>Follow us on</p>
                             <ul>
-                                <li><a href="/"><FaFacebookF /></a></li>
-                                <li><a href="/"><FaTwitter /></a></li>
-                                <li><a href="/"><FaInstagram /></a></li>
+                                <li><a href="https://www.instagram.com/trident_dental.clinic?igsh=NDA1NjlrMnB1aWNv" target="_blank" rel="noopener noreferrer"><FaInstagram /></a></li>
+                                <li><a href="https://www.facebook.com/share/U69YDJsg82y6aU9x/?mibextid=qi2Omg" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a></li>
+                                <li><a href="https://youtube.com/@tridentdentalclinic?si=2OWUbTiMg1Q_uiLV" target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
                             </ul>
                         </div>
                     </div>
