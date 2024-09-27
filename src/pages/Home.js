@@ -1,14 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import Appointment from '../sections/Appointment/Appointment';
-import Banner from '../sections/Banner/Banner';
+import Banner from '../sections/Home-Banner/Banner';
 import Blogs from '../sections/Blogs/Blogs';
-import Emergency from '../sections/Emergency/Emergency';
-import Expert from '../sections/Expert/Expert';
-import Features from '../sections/Features/Features';
+import Emergency from '../sections/Home-Emergency/Emergency';
+import Expert from '../sections/Home-Expert/Expert';
+import Features from '../sections/Home-Features/Features';
 import Footer from '../sections/Footer/Footer';
-import Services from '../sections/Services/Services';
-import Testimonial from '../sections/Testimonial/Testimonial';
+import Services from '../sections/Home-Services/Services';
+import Testimonial from '../sections/Home-Testimonial/Testimonial';
 
 const Home = () => {
 
@@ -22,7 +21,6 @@ const Home = () => {
             <Expert/>
             <Testimonial/>
             <Blogs/>
-            <Appointment/>
             <Footer/>
         </>
     );

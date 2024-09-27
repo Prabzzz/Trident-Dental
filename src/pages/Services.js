@@ -1,10 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../sections/Footer/Footer';
-import Gallery from '../sections/Gallery/Gallery';
-import ServiceBanner from '../sections/ServiceBanner/ServiceBanner';
-import Symptoms from '../sections/Symptoms/Symptoms';
-import Appointment from '../sections/Appointment/Appointment';
+import Gallery from '../sections/Service-Gallery/Gallery';
+import ServiceBanner from '../sections/Service-Banner/ServiceBanner';
+import Symptoms from '../sections/Service-Sympthoms/Symptoms';
 
 const Services = () => {
     return (
@@ -13,7 +12,6 @@ const Services = () => {
             <ServiceBanner />
             <Symptoms />
             <Gallery />
-            <Appointment />
             <Footer />
         </>
     );

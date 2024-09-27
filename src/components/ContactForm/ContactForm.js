@@ -18,28 +18,6 @@ const ContactForm = () => {
                         <input type="email" class="form-control" placeholder="Enter email address..." />
                     </div>
                 </div>
-                <div className="col-lg-6">
-                    <div class="form-group">
-                        <label>Service</label>
-                        <select class="form-control">
-                            <option>Teeth Whitening</option>
-                            <option>Teeth Whitening</option>
-                            <option>Teeth Whitening</option>
-                            <option>Teeth Whitening</option>
-                        </select>
-                    </div>
-                </div>
-                <div className="col-lg-6">
-                    <div class="form-group">
-                        <label>Department</label>
-                        <select class="form-control">
-                            <option>Select Department</option>
-                            <option>Select Department</option>
-                            <option>Select Department</option>
-                            <option>Select Department</option>
-                        </select>
-                    </div>
-                </div>
                 <div className="col-lg-12">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Messages</label>

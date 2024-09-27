@@ -12,7 +12,7 @@ const BlogCard = ({blog}) => {
                     <img src={img} alt="blog"/>
                     <div className="date">
                         <h6>23</h6>
-                        <p>Jan</p>
+                        <p>Sep</p>
                     </div>
                 </div>
                 <div className="blog-text">
