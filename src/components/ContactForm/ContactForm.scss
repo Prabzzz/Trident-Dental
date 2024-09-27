@@ -44,3 +44,19 @@
         height: 150px !important;
     }
 }
+.call-text {
+
+    p {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $color-blue;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    h6 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import './Services.scss';
 import ServicesData from './ServiceData';
-import Service from '../../components/Service/Service';
+import Service from '../../components/Home-Service/Service';
 import { Link } from 'react-router-dom';
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 

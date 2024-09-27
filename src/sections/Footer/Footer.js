@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/footer_logo.png';
 import './Footer.scss';
-import { FaFacebookF, FaInstagram, FaTwitter} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
@@ -11,44 +11,47 @@ const Footer = () => {
 
     const footerMenu = [
         {
-            name : 'About Us',
-            path : '/about'
+            name: 'About Us',
+            path: '/about'
         },
         {
-            name : 'Dental Services',
-            path : '/singleservice'
+            name: 'Dental Services',
+            path: '/singleservice'
         },
         {
-            name : 'Dentist',
-            path : '/'
+            name: 'Dentist',
+            path: '/'
         },
         {
-            name : 'Blogs',
-            path : '/blogs'
+            name: 'Blogs',
+            path: '/blogs'
         },
         {
-            name : 'FAQs',
-            path : '/'
+            name: 'FAQs',
+            path: '/'
         }
     ];
 
     const footerContacts = [
         {
             'title': 'Phone Number',
-            'info': '+91 99444 65304',
-            'icon': call
+            'info': `<a href="tel:+919944465304">+91 99444 65304</a>`,
+            'icon': call,
+            'link': 'tel:+919944465304'  
         },
         {
             'title': 'Open Hour',
-            'info': 'Mon - Fri [10:00 AM - 09:00 PM]<br />Sat - Sun [11:00 AM - 10:00 PM]',
-            'icon': time
+            'info': `<a href="https://calendar.google.com/" target="_blank">Mon - Fri [10:00 AM - 09:00 PM]<br />Sat - Sun [11:00 AM - 10:00 PM]`,
+            'icon': time,
+            'link': 'https://calendar.google.com/'
         },
         {
             'title': 'Clinic Address',
-            'info': 'No 1B, Anandha Nagar,<br />Kathirkamam, pondicherry - 605009',
-            'icon': location
+            'info': `<a href="https://maps.app.goo.gl/7SaVSuiG9yGWDqFR7" target="_blank">No 1B, Anandha Nagar,<br />Kathirkamam, Pondicherry - 605009</a>`,
+            'icon': location,
+            'link': 'https://maps.app.goo.gl/7SaVSuiG9yGWDqFR7'
         }
-    ]
+    ];
 
     return (
         <footer className='pt-100 pb-70'>
@@ -63,9 +66,9 @@ const Footer = () => {
                         <div className="social-logo">
                             <p>Follow us on</p>
                             <ul>
-                                <li><a href="/"><FaFacebookF/></a></li>
-                                <li><a href="/"><FaTwitter/></a></li>
-                                <li><a href="/"><FaInstagram/></a></li>
+                                <li><a href="/"><FaFacebookF /></a></li>
+                                <li><a href="/"><FaTwitter /></a></li>
+                                <li><a href="/"><FaInstagram /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -74,7 +77,7 @@ const Footer = () => {
                             <p>Quick Links</p>
                             <ul>
                                 {
-                                    footerMenu.map(singleMenu => <li><Link to={singleMenu.path}>{singleMenu.name}</Link></li>)
+                                    footerMenu.map(singleMenu => <li key={singleMenu.name}><Link to={singleMenu.path}>{singleMenu.name}</Link></li>)
                                 }
                             </ul>
                         </div>
@@ -84,15 +87,20 @@ const Footer = () => {
                             <p>Contact & Information</p>
 
                             {
-                                footerContacts.map(footerContact => {
-                                    return  <div className="contact-list">
-                                                <div className="contact-icon">
-                                                    <img src={footerContact.icon} alt="call" />
-                                                </div>
-                                                <div className="contact-text">
-                                                    <p>{footerContact.title}</p>
-                                                    <h5 dangerouslySetInnerHTML={{ __html: footerContact.info }}></h5>                                                </div>
+                                footerContacts.map((footerContact, index) => {
+                                    return (
+                                        <div className="contact-list" key={index}>
+                                            <div className="contact-icon">
+                                                <a href={footerContact.link || "#"} target={footerContact.link ? "_blank" : "_self"}>
+                                                    <img src={footerContact.icon} alt={footerContact.title} />
+                                                </a>
                                             </div>
+                                            <div className="contact-text">
+                                                <p>{footerContact.title}</p>
+                                                <h5 dangerouslySetInnerHTML={{ __html: footerContact.info }}></h5>
+                                            </div>
+                                        </div>
+                                    )
                                 })
                             }
                         </div>
@@ -102,13 +110,13 @@ const Footer = () => {
                 <div className="copyright-area">
                     <div className='copy-text'>
                         <p>&copy; Trident. All Right Reserved</p>
-                    </div>  
+                    </div>
                     <div className='copy-links'>
                         <ul>
                             <li><Link to='/'>Terms of Use</Link></li>
                             <li><Link to='/'>Privacy Policy</Link></li>
                         </ul>
-                    </div>                          
+                    </div>
                 </div>
             </div>
         </footer>

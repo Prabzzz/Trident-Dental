@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import icon from '../../assets/banner/icons/Calling.png';
 import bannerImg from '../../assets/banner/1.png';
 import doctorImg from '../../assets/banner/doctor.png';
@@ -29,18 +29,23 @@ const Banner = () => {
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                           <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+                                            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book an Appointment</a>
                                         </div>
 
                                         <div className="banner-call">
-                                            <div className='icon'>
-                                                <img src={icon} alt="icon" />
-                                            </div>
-                                            <div className='call-text'>
-                                                <p>Dental 24H Emergency</p>
-                                                <h6>+91 99444 65304</h6>
-                                            </div>
+                                            <a href="tel:+919944465304" className='call-link'>
+                                                <div className='icon'>
+                                                    <img src={icon} alt="icon" />
+                                                </div>
+                                                </a>
+                                                <div className='call-text'>
+                                                    <p>Dental 24H Emergency</p>
+                                                    <a href="tel:+919944465304" className='call-link'>
+                                                    <h6>+91 99444 65304</h6>
+                                                    </a>
+                                                </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +63,7 @@ const Banner = () => {
                                             <p>Dr. J. Rajarajeswari</p>
                                             <p><small>Chief Dental Surgeon</small></p>
                                         </div>
-                                    </div>  
+                                    </div>
 
                                     {/* Vector Shapes */}
                                     <div className="shapes">

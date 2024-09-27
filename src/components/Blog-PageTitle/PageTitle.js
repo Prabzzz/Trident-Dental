@@ -1,7 +1,7 @@
 import React from 'react';
 import './PageTitle.scss';
 
-const PageTitle = ({title,description}) => {
+const PageTitle = () => {
     return (
         <div className='page-title'>
             <div className="container">

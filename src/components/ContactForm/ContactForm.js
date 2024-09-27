@@ -3,6 +3,10 @@ import './ContactForm.scss';
 import icon from '../../assets/banner/icons/Calling.png';
 
 const ContactForm = () => {
+    const phoneNumber = '+919944465304'; // Replace with your actual phone number
+    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
+    const encodedMessage = encodeURIComponent(bookingMessage);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     return (
         <form>
             <div className="row">
@@ -26,7 +30,9 @@ const ContactForm = () => {
                 </div>
 
                 <div className="col-lg-6">
-                    <button type="submit" class="btn appointment-btn">Book an appointment</button>
+                    <div className="theme-btn">
+                        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+                    </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="appointment-call">
