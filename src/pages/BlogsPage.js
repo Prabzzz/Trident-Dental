@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
-import PageTitle from '../components/PageTitle/PageTitle';
+import PageTitle from '../components/Blog-PageTitle/PageTitle';
 import Footer from '../sections/Footer/Footer';
 import BlogCard from '../components/BlogCard/BlogCard';
 import BlogData from '../sections/Blogs/BlogData';
