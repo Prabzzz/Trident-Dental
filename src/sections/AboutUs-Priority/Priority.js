@@ -23,7 +23,7 @@ const Priority = () => {
                             <SectionTitle
                                 subTitle="OUR PRIORITY"
                                 title="Our clients are our priority"
-                                description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                                description="Ensuring the highest level of care for our patients is our top priority. Dr. J. Rajarajeswari is dedicated to providing personalized treatment and support, making sure each client's needs are met with compassion and professionalism."
                             />
 
                             <div className="theme-btn">

@@ -13,26 +13,20 @@ const Testimonial = () => {
     const testimonails = [
         {
             'img': imgOne,
-            'name': 'Robert Fox',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Suriya',
+            'description' : 'I had my front tooth aesthetic filling it was very good experience with Dr. Raji , she changed my smile. Thanks alot to Dr. Raji❤️❤️',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgTwo,
-            'name': 'Albert Flores',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Prabha',
+            'description' : 'Superb clinic. Loved the ambience. I felt relaxed as I entered the clinic. I got my wisdom tooth extracted. I had a painless experience. Definitely recommend.',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         },
         {
             'img': imgThree,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
-            'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
-        },
-        {
-            'img': imgOne,
-            'name': 'Bessie Cooper',
-            'description' : 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts',
+            'name': 'Ramya',
+            'description' : 'Today i had an appointment for my mom Dr.Raji did an excellent work finally my mom got relieved from the pain😊',
             'ratings':[<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>,<AiFillStar/>]
         }
     ]
@@ -80,7 +74,7 @@ const Testimonial = () => {
                         />
                     </div>
                     <div className="col-lg-6">
-                        <p className="pt-5">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts </p>
+                        <p className="pt-5">Real stories from patients who have experienced exceptional care. Hear how Dr. J. Rajarajeswari has transformed smiles and improved lives with her gentle approach and expert dental treatments </p>
                     </div>
                 </div>
 

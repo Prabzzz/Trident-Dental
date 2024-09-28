@@ -7,21 +7,21 @@ const BlogData = [
         'img': imgOne,
         'url': 'new-technology-make-for-dental-operation',
         'title':'New Technology Make for Dental Operation',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'description':'Advanced technology ensures precise diagnoses and effective treatments',
         'category': 'TECHNOLOGY'
     },
      {
         'img': imgTwo,
         'url':'regular-dental-care-make-your-smile-brighter',
         'title':'Regular Dental care make Your Smile Brighter',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'description':'Regular dental care keeps your smile bright and healthy',
         'category': 'DENTAL'
     },
     {
         'img': imgThree,
         'url':'dental-hygiene-for-all-age-to-make-smile',
         'title':'Dental Hygiene for All Age to Make Smile',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'description':'Dental hygiene for all ages to ensure a healthy, confident smile',
         'category': 'HYGIENE'
     }
 ];

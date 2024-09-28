@@ -19,7 +19,7 @@ const Emergency = () => {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <div className="emergency-text">
-                            <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly treatment from our locally practice." description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups." />
+                            <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly treatment from our locally practice." description="Prompt, compassionate care available any time, ensuring comfort and relief. Our trusted local team is ready to handle your dental emergencies with expertise and kindness." />
 
                             <div className="theme-btn">
                                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"> Book an Appointment</a>

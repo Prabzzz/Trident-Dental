@@ -12,7 +12,7 @@ const Contactus = () => {
                 <Navbar />
                 <SectionTitle 
                     title="Contact Us"
-                    description="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                    description="We're here to help! Reach out to Dr. J. Rajarajeswari's office for any inquiries, appointment bookings, or assistance with your dental needs. Our friendly staff is ready to provide you with the information you need for a healthy smile."
                 />
             </section>
             <section className='contact-form-area' data-aos="fade-up" data-aos-duration="2000">
