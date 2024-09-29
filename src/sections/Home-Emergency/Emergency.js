@@ -1,13 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Emergency.scss';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import EmergencyImg from '../../assets/emergency.png';
 
 const Emergency = () => {
-    const phoneNumber = '+919944465304'; // Replace with your actual phone number
-    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
-    const encodedMessage = encodeURIComponent(bookingMessage);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     return (
         <section className='emergency-section' data-aos="fade-up" data-aos-duration="2000">
             <div className="container-fluid">
@@ -22,7 +19,7 @@ const Emergency = () => {
                             <SectionTitle subTitle="Dental 24H Emergency" title="Gentle, friendly treatment from our locally practice." description="Prompt, compassionate care available any time, ensuring comfort and relief. Our trusted local team is ready to handle your dental emergencies with expertise and kindness." />
 
                             <div className="theme-btn">
-                                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"> Book an Appointment</a>
+                            <Link to='/contact'>Contact Us</Link>
                             </div>
                         </div>
                     </div>

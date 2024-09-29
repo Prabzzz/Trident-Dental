@@ -3,8 +3,8 @@ import Navbar from '../components/Navbar/Navbar';
 import AboutBanner from '../sections/AboutUs-Banner/AboutBanner';
 import Faq from '../sections/AboutUs-Faq/Faq';
 import Priority from '../sections/AboutUs-Priority/Priority';
-import Team from '../sections/AboutUs-Team/Team';
 import Footer from '../sections/Footer/Footer';
+import Appointment from '../sections/AboutUs-Appointment/Appointment';
 
 const About = () => {
     return (
@@ -12,7 +12,7 @@ const About = () => {
             <Navbar />
             <AboutBanner />
             <Priority />
-            <Team />
+            <Appointment />
             <Faq />
             <Footer />
         </>

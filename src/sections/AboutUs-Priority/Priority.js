@@ -5,10 +5,6 @@ import priorityImg from '../../assets/about/priority.png';
 import './Priority.scss';
 
 const Priority = () => {
-    const phoneNumber = '+919944465304'; // Replace with your actual phone number
-    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
-    const encodedMessage = encodeURIComponent(bookingMessage);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     return (
         <section className='priority-section emergency-section' data-aos="fade-up" data-aos-duration="2000">
             <div className="container-fluid">
@@ -25,10 +21,6 @@ const Priority = () => {
                                 title="Our clients are our priority"
                                 description="Ensuring the highest level of care for our patients is our top priority. Dr. J. Rajarajeswari is dedicated to providing personalized treatment and support, making sure each client's needs are met with compassion and professionalism."
                             />
-
-                            <div className="theme-btn">
-                                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"> Book an Appointment</a>
-                            </div>
                         </div>
                     </div>
                 </div>

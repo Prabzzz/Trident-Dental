@@ -3,8 +3,8 @@ import './ContactForm.scss';
 import icon from '../../assets/banner/icons/Calling.png';
 
 const ContactForm = () => {
-    const phoneNumber = '+919944465304'; // Replace with your actual phone number
-    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
+    const phoneNumber = '+919944465304';
+    const bookingMessage = 'Hello, I would like to book an appointment.';
     const encodedMessage = encodeURIComponent(bookingMessage);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     return (

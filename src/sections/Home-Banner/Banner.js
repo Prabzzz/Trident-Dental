@@ -1,6 +1,6 @@
 import React from 'react';
-import './Banner.scss';
 import { Link } from 'react-router-dom';
+import './Banner.scss';
 import icon from '../../assets/banner/icons/Calling.png';
 import bannerImg from '../../assets/banner/1.png';
 import doctorImg from '../../assets/banner/doctor.png';
@@ -11,11 +11,6 @@ import shapeThree from '../../assets/banner/vector_03.png';
 import shapeFour from '../../assets/banner/pattern.png';
 
 const Banner = () => {
-    const phoneNumber = '+919944465304'; // Replace with your actual phone number
-    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
-    const encodedMessage = encodeURIComponent(bookingMessage);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
     return (
         <section className='section-bg section-common banner-section'>
             <div className="d-table">
@@ -29,7 +24,7 @@ const Banner = () => {
 
                                     <div className="banner-bottom">
                                         <div className="theme-btn">
-                                            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book an Appointment</a>
+                                        <Link to='/contact'>Book an Appointment</Link>
                                         </div>
 
                                         <div className="banner-call">

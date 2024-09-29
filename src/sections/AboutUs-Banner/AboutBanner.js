@@ -6,10 +6,6 @@ import bannerTwo from '../../assets/about/banner/banner_2.png'
 import pattern from '../../assets/banner/pattern.png'
 
 const AboutBanner = () => {
-    const phoneNumber = '+919944465304'; // Replace with your actual phone number
-    const bookingMessage = 'Hello, I would like to book an appointment.'; // Replace with your booking message
-    const encodedMessage = encodeURIComponent(bookingMessage);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     return (
         <section className='about-section' data-aos="fade-up" data-aos-duration="2000">
             <div className="d-table">
@@ -22,7 +18,7 @@ const AboutBanner = () => {
                                     <p>We want you to feel amazing about your oral wellness. Not just twice a year, but every time you take a bite, tell a joke, laugh, or share a kiss.</p>
 
                                     <div className="theme-btn">
-                                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Contact Us</a>
+                                    <Link to='/contact'>Contact Us</Link>
                                     </div>
                                 </div>
                             </div>
