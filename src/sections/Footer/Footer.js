@@ -47,7 +47,7 @@ const Footer = () => {
         },
         {
             'title': 'Clinic Address',
-            'info': `<a href="https://maps.app.goo.gl/7SaVSuiG9yGWDqFR7" target="_blank">No 1B, Anandha Nagar,<br />Kathirkamam, Pondicherry - 605009</a>`,
+            'info': `<a href="https://maps.app.goo.gl/7SaVSuiG9yGWDqFR7" target="_blank">No 1B, Bharathi Street, Anandha Nagar,<br />Kathirkamam, Pondicherry - 605009</a>`,
             'icon': location,
             'link': 'https://maps.app.goo.gl/7SaVSuiG9yGWDqFR7'
         }
