@@ -61,7 +61,7 @@ const Footer = () => {
                         <div className="footer-logo">
                             <img src={logo} alt="logo" />
                         </div>
-                        <p>Dental Care Seattle is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill</p>
+                        <p>Trident Dental Care is a top-rated local practice for cosmetic, preventative, and restorative dentistry in Pondicherry</p>
 
                         <div className="social-logo">
                             <p>Follow us on</p>
