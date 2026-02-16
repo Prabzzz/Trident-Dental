@@ -12,6 +12,12 @@ const Appointment = () => {
     notes: ""
   });
 
+  const [notification, setNotification] = useState({
+    show: false,
+    type: "", // success or error
+    message: ""
+  });
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,11 +25,19 @@ const Appointment = () => {
     });
   };
 
+  const showNotification = (type, message) => {
+    setNotification({ show: true, type, message });
+
+    setTimeout(() => {
+      setNotification({ show: false, type: "", message: "" });
+    }, 3000);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-      await fetch("PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE", {
+      await fetch("YOUR_GOOGLE_SCRIPT_URL", {
         method: "POST",
         mode: "no-cors",
         headers: {
@@ -31,10 +45,9 @@ const Appointment = () => {
         },
         body: JSON.stringify(formData),
       });
-  
-      alert("Appointment Booked Successfully!");
-  
-      // Reset form
+
+      showNotification("success", "Appointment Booked Successfully!");
+
       setFormData({
         name: "",
         phone: "",
@@ -44,28 +57,34 @@ const Appointment = () => {
         service: "",
         notes: ""
       });
-  
+
     } catch (error) {
-      alert("Something went wrong");
+      showNotification("error", "Something went wrong. Please try again.");
     }
-  };  
+  };
 
   return (
     <div className="appointment-section">
 
-      {/* ===== TOP HEADER ===== */}
+      {/* Notification */}
+      {notification.show && (
+        <div className={`custom-notification ${notification.type}`}>
+          {notification.message}
+        </div>
+      )}
+
       <div className="appointment-header">
         <h2>Book Your Appointment</h2>
         <p>Schedule your visit with Trident Dental Clinic</p>
       </div>
 
-      {/* ===== FORM CARD ===== */}
       <div className="appointment-card">
         <form className="appointment-form" onSubmit={handleSubmit}>
-
+          
           <input
             type="text"
             name="name"
+            value={formData.name}
             placeholder="Full Name"
             onChange={handleChange}
             required
@@ -74,6 +93,7 @@ const Appointment = () => {
           <input
             type="text"
             name="phone"
+            value={formData.phone}
             placeholder="Phone Number"
             onChange={handleChange}
             required
@@ -82,11 +102,11 @@ const Appointment = () => {
           <input
             type="email"
             name="email"
+            value={formData.email}
             placeholder="Email"
             onChange={handleChange}
           />
 
-          {/* FULLY CLICKABLE DATE */}
           <input
             type="date"
             name="date"
@@ -95,7 +115,6 @@ const Appointment = () => {
             required
           />
 
-          {/* FULLY CLICKABLE TIME */}
           <input
             type="time"
             name="time"
@@ -106,6 +125,7 @@ const Appointment = () => {
 
           <select
             name="service"
+            value={formData.service}
             onChange={handleChange}
             required
           >
@@ -120,16 +140,15 @@ const Appointment = () => {
 
           <textarea
             name="notes"
+            value={formData.notes}
+            onChange={handleChange}
             placeholder="Additional Notes"
           />
 
-          <button type="submit">
-            Book Now
-          </button>
+          <button type="submit">Book Now</button>
 
         </form>
       </div>
-
     </div>
   );
 };
