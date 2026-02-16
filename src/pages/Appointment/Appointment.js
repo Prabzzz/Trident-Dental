@@ -19,10 +19,36 @@ const Appointment = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Appointment Booked Successfully!");
-  };
+  
+    try {
+      await fetch("PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      alert("Appointment Booked Successfully!");
+  
+      // Reset form
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        date: "",
+        time: "",
+        service: "",
+        notes: ""
+      });
+  
+    } catch (error) {
+      alert("Something went wrong");
+    }
+  };  
 
   return (
     <div className="appointment-section">
