@@ -91,7 +91,7 @@ const Footer = () => {
                                     return (
                                         <div className="contact-list" key={index}>
                                             <div className="contact-icon">
-                                                <a href={footerContact.link || "#"} target={footerContact.link ? "_blank" : "_self"}>
+                                                <a href={footerContact.link || "#"} target={footerContact.link ? "_blank" : "_self"} rel="noopener noreferrer">
                                                     <img src={footerContact.icon} alt={footerContact.title} />
                                                 </a>
                                             </div>
