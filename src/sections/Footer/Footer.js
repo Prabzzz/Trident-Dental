@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/footer_logo.png';
 import './Footer.scss';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import call from '../../assets/footer/calling.png';
 import time from '../../assets/footer/time.png';
