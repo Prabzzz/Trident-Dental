@@ -1,0 +1,132 @@
+@import './../../sass/fonts.scss';
+@import './../../sass/colors.scss';
+
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999999;
+
+  // ✅ use poppins instead of body font
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Floating Button */
+.chatbot-icon {
+  padding: 16px 22px;
+  background: linear-gradient(135deg, #0d6efd, #20c997);
+  color: $color-white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500; // slightly lighter
+  font-size: 13px; // reduced
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Chat Window */
+.chatbot {
+  width: 360px;
+  height: 500px;
+  background: $color-white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+/* Header */
+.chatbot__header {
+  background: linear-gradient(135deg, #0d6efd, #20c997);
+  color: $color-white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px; // reduced
+
+  button {
+    background: transparent;
+    border: none;
+    color: $color-white;
+    font-size: 20px; // reduced
+    cursor: pointer;
+  }
+}
+
+/* Body */
+.chatbot__body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f4f9ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Messages */
+.chatbot__message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 13px; 
+  line-height: 1.4;
+
+  &.bot {
+    background: #e3f2fd;
+    color: $color-black;
+    align-self: flex-start;
+  }
+
+  &.user {
+    background: linear-gradient(135deg, #0d6efd, #20c997);
+    color: $color-white;
+    align-self: flex-end;
+  }
+}
+
+/* Options */
+.chatbot__options {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  button {
+    background: #0d6efd;
+    color: $color-white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #20c997;
+    }
+  }
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

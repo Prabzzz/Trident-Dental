@@ -6,6 +6,7 @@ import Services from './pages/Services';
 import BlogsPage from './pages/BlogsPage';
 import SingleBlog from './pages/SingleBlog/SingleBlog';
 import Contactus from './pages/Contact/Contactus';
+import Appointment from './pages/Appointment/Appointment';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/blogs" element={<BlogsPage />} />
       <Route path="/blog/:url" element={<SingleBlog />} />
       <Route path="/contact" element={<Contactus />} />
+      <Route path="/appointment" element={<Appointment />} />
     </Routes>
   );
 }
